@@ -1,10 +1,13 @@
 Name: Max Greer
 Email: themaxgreer@gmail.com
-List of files:		sgrep.cpp (main module for creating final NFA)
+List of files:		
+			sgrep
+			sgrep.cpp (main module for creating final NFA)
 			NFA.h
 			NFA.cpp
 			test.pl (for testing simple-grep program)
 			sgrep.pdf
+			Makefile
 			README
 Description:
 SGrep is a program that uses a grammar for regular expression to
