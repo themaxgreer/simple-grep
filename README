@@ -1,0 +1,41 @@
+Name: Max Greer
+Email: themaxgreer@gmail.com
+List of files:		sgrep.cpp (main module for creating final NFA)
+			NFA.h
+			NFA.cpp
+			test.pl (for testing simple-grep program)
+			sgrep.pdf
+			README
+Description:
+SGrep is a program that uses a grammar for regular expression to
+construct a recursive descent parser. A much deeper discussion on the program
+construction is in sgrep.pdf.
+
+To build enter this command:
+make
+
+To clean riffraff enter this command:
+make clean
+
+To Run enter this command:
+./sgrep 'pattern' < inputfile
+
+What will outputted from run command:
+list of matches to that "pattern"
+
+
+To run with your provided test.pl Perl Script:
+./test.pl
+NOTE: to test different .h files comment out the other two files and make sure
+you have those header files
+
+Thanks to:
+Dr. Cochran (ezekiel.vancouver.wsu.edu) for the NFA.h and NFA.cpp
+files for constructing NFA's for this project.
+________________________________________________________________________________
+
+Note: I didn't use lex/yacc to use regular expressions as I felt it was kind of 
+cyclical using regular expressions to match regular expression. Instead I created 
+functions that manipulates or constructs the final NFA using recursive descent. I 
+had to change NFA.h to include a default constructor for NFAs and CharSets in order 
+for my sgrep program to work.
